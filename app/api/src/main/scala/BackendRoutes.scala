@@ -1,12 +1,15 @@
 package com.principate.delphi.api
 
-import handlers.HealthCheckHandler
-import smithy4s.http4s.SimpleRestJsonBuilder
-
 import cats.Applicative
-import cats.effect.{Async, Concurrent, Resource, Sync}
+import cats.effect.Async
+import cats.effect.Concurrent
+import cats.effect.Resource
+import cats.effect.Sync
 import cats.syntax.all.*
 import org.http4s.HttpRoutes
+import smithy4s.http4s.SimpleRestJsonBuilder
+
+import handlers.HealthCheckHandler
 
 object BackendRoutes:
 

@@ -1,15 +1,17 @@
 package com.principate.delphi
-package bootstraps
+package bootstrap
 
-import api.BackendRoutes
-import client.FrontendRoutes
-
-import cats.effect.{Async, Resource}
+import cats.effect.Async
+import cats.effect.Resource
 import cats.syntax.all.*
 import com.comcast.ip4s.*
 import org.http4s.ember.server.EmberServerBuilder
+import org.http4s.server.Router
+import org.http4s.server.Server
 import org.http4s.server.staticcontent.*
-import org.http4s.server.{Router, Server}
+
+import api.BackendRoutes
+import client.FrontendRoutes
 
 object Server:
 
